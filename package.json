@@ -1,10 +1,14 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "con-esta-luz",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A site honoring the life and legacy of Sor Maria Rosa Leggol",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Carrie Pascale <cpascale43@gmail.com>",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "gatsby": "^2.24.66",
     "gatsby-image": "^2.4.20",
     "gatsby-plugin-manifest": "^2.4.32",

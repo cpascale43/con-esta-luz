@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `With This Light`,
+    description: `'With This Light' is a new documentary film that shares the story of Sor Maria Rosa Leggol, a Franciscan nun known for her 70+ year legacy of humanitarian work in Honduras.`,
+    author: `@carriepascale`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

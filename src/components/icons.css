@@ -1,0 +1,32 @@
+.icon {
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 0.5em;
+  padding: 0.7em;
+  background: transparent;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.social:hover {
+  background-color: whitesmoke;
+  color: #2f242c;
+}
+
+.social {
+  border: 0.12em solid whitesmoke;
+  color: whitesmoke;
+}
+
+.flag {
+  width: 2em;
+  height: 2em;
+  margin: 0 0.62em;
+  /* padding-bottom: 0.5%; */
+}
+
+.flag:hover {
+  cursor: pointer;
+}
