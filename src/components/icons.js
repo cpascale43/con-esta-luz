@@ -3,8 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 
-import { SpainFlag } from "./images"
-
 import "./icons.css"
 
 library.add(fab)
@@ -15,17 +13,17 @@ export const SocialIcon = ({ url, icon }) => (
     className="icon social"
     style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
   >
-    <FontAwesomeIcon icon={icon} size="m" />
+    <FontAwesomeIcon icon={icon} size="1x" />
   </a>
 )
 
 export const FlagIcon = ({ src, alt, onClick }) => (
-  <a
+  <button
     type="button"
     className="flag"
     onClick={onClick}
     style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
   >
     <img style={{margin: '0'}} src={src} alt={alt} />
-  </a>
+  </button>
 )
