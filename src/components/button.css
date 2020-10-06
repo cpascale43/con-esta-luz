@@ -1,0 +1,80 @@
+.button-container {
+  margin-top: auto;
+  width: 30em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-container div {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  cursor: pointer;
+  border-radius: 1.2em;
+  width: 14em;
+  height: 3em;
+  border: 0.3em solid whitesmoke;
+  font-weight: bold;
+}
+
+.button-primary {
+  background-color: whitesmoke;
+}
+
+.button-secondary {
+  color: whitesmoke;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.button-primary-text {
+  /* font-size: 16px; */
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.button-secondary-text {
+  font-size: 0.75rem;
+  white-space: pre-line;
+  line-height: 1.5;
+  /* word-spacing: 1em; */
+  /* letter-spacing: -2px; */
+  /* overflow-wrap: break-word; */
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  .button-container {
+    height: 25%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18%;
+  }
+
+  .button {
+    width: 35rem;
+    height: 7em;
+    margin-bottom: 2em;
+    border: 0.7em solid whitesmoke;
+    border-radius: 2.2em;
+  }
+
+  .button-primary-text {
+    font-size: 	2.3rem
+  }
+
+  .button-secondary-text {
+    font-size: 	1.7rem;
+    margin: 1em;
+  }
+}

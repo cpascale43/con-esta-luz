@@ -20,6 +20,10 @@ div[role="group"][tabindex] {
   height: 100%;
 }
 
-header {
+/* header {
   background: rgba(0, 0, 0, 0.01);
+} */
+
+.visible-xs {
+  display: none;
 }

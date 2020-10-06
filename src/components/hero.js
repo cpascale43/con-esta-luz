@@ -1,48 +1,32 @@
 import React from "react"
 
 import { Button } from "./button"
+import "./button.css"
+import "./heroText.css"
 
 const CTA1 = {
   text: "STAY IN THE LOOP",
   onClick: () => {},
-  //   styles: {
-  //     borderRadius: "15px",
-  //     width: '15em',
-  //     border: "0.5em solid white",
-  //     backgroundColor: "white",
-  //   },
 }
 
 const CTA2 = {
-  //   text: "LEARN MORE ABOUT SOCIEDAD AMIGOS DE LOS NIÑOS (SAN)",
-  text: "STAY IN THE LOOP",
+  text: `LEARN ABOUT SOCIEDAD\nAMIGOS DE LOS NIÑOS (SAN)`,
   onClick: () => {},
-  //   styles: {
-  //     width: '15em',
-  //     borderRadius: "15px",
-  //     border: "0.5em solid white",
-  //     backgroundColor: "transparent",
-  //   },
+  type: "button-secondary",
 }
 
 const Hero = () => (
-  <div
-    style={{
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      margin: "15% 5%",
-    }}
-  >
-    <h2>HONDURAN CHILDREN NEEDED HELP.</h2>
-    <h1>SHE ANSWERED THE CALL.</h1>
-    <div
-      style={{
-        width: "25%",
-        display: "flex",
-        justifyContent: "space-between",
-      }}
-    >
+  <div className="hero-container">
+    <h1>
+      HONDURAN <br className="visible-xs" />
+      CHILDREN <br className="visible-xs" />
+      NEEDED HELP.{" "}
+    </h1>
+    <h1 style={{ fontSize: "5em", fontWeight: "bold" }}>
+      SHE ANSWERED <br className="visible-xs" />
+      THE CALL.
+    </h1>
+    <div className="button-container">
       <div>
         <Button {...CTA1} />
       </div>
