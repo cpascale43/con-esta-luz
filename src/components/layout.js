@@ -45,13 +45,13 @@ const Layout = ({ children }) => {
           {children}
         </main>
 
-        <footer
+        {/* <footer
           style={{
             backgroundColor: "aquamarine",
           }}
         >
           © {new Date().getFullYear()}
-        </footer>
+        </footer> */}
       </div>
     // </div>
   )

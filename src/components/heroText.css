@@ -1,18 +1,27 @@
 .hero-container {
-  height: 45%;
+  height: 28%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 15em 0 0 0;
+  margin: 5em 0 0 0;
 }
 
-.hero-container h1 {
-  font-weight: 400;
+.text {
   line-height: 1;
-  white-space: nowrap;
-  font-size: 3em;
+  letter-spacing: 3px;
+  text-align: center;
+  /* white-space: nowrap; */
   color: whitesmoke;
-  letter-spacing: 5px;
+}
+
+.text-normal {
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.text-bold {
+  font-size: 2.2em;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 480px) {
@@ -20,7 +29,7 @@
     height: 100%;
     text-align: center;
     margin: 0;
-    margin-top: 45%;
+    margin-top: 15em;
   }
 
   .hero-container h1 {

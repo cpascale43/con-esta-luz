@@ -17,12 +17,12 @@ const CTA2 = {
 
 const Hero = () => (
   <div className="hero-container">
-    <h1>
+    <h1 className="text text-normal">
       HONDURAN <br className="visible-xs" />
       CHILDREN <br className="visible-xs" />
       NEEDED HELP.{" "}
     </h1>
-    <h1 style={{ fontSize: "5em", fontWeight: "bold" }}>
+    <h1 className="text text-bold">
       SHE ANSWERED <br className="visible-xs" />
       THE CALL.
     </h1>
