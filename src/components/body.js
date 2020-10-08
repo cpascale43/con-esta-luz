@@ -3,7 +3,7 @@ import React from "react"
 import "./body.css"
 
 const Body = () => (
-  <div className="triangle">
+  // <div className="triangle">
     <div className="container">
       <div className="row body-text body-container-left">
         <h2>
@@ -51,7 +51,7 @@ const Body = () => (
         </p>
       </div>
     </div>
-  </div>
+  // </div>
 )
 
 export default Body

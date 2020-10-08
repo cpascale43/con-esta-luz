@@ -17,17 +17,16 @@ const CTA2 = {
 
 const Hero = () => (
   <div className="hero-container">
-    <div style={{marginLeft: '8em'}} className="container">
+    <div style={{ marginLeft: "8em" }} className="container">
       <h1 className="row text text-normal pl-2">
-        HONDURAN <br className="visible-xs" />
-        CHILDREN <br className="visible-xs" />
+        HONDURAN CHILDREN <br />
         NEEDED HELP.
       </h1>
       <h1 className="row text text-bold pl-2">
         SHE ANSWERED <br /> THE CALL.
       </h1>
       <div className="button-container">
-        <div className="row d-flex flex-column justify-content-between">
+        <div className="row d-flex flex-column">
           <div className="col py-2">
             <Button {...CTA1} />
           </div>
