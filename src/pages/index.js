@@ -3,20 +3,18 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Hero from "../components/hero"
 import Body from "../components/body"
 
 import "../components/heroImage.css"
 
 const IndexPage = () => (
-  <div className="imageWrapper">
+  // <div className="imageWrapper">
     <Layout>
       <SEO title="Home" />
-      <Hero />
       <Body />
       {/* <Link to="/page-2/">Go to page 2</Link> <br /> */}
     </Layout>
-  </div>
+  // </div>
 )
 
 export default IndexPage

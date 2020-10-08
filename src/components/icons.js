@@ -24,6 +24,14 @@ export const FlagIcon = ({ src, alt, onClick }) => (
     onClick={onClick}
     style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
   >
-    <img style={{margin: '0'}} src={src} alt={alt} />
+    <img style={{ margin: "0" }} src={src} alt={alt} />
   </button>
 )
+
+export const PartnerIcon = ({ id, src, alt }) => {
+  return (
+    <div style={{ width: 150, height: 150, marginRight: id === 3 ? "0" : "1.2em" }}>
+      <img style={{ margin: 0 }} src={src} alt={alt} />
+    </div>
+  )
+}

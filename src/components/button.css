@@ -1,26 +1,18 @@
-.button-container {
-  /* margin-top: auto; */
-  width: 30em;
-  display: flex;
-  justify-content: space-between;
-}
-
-.button-container div {
-  display: flex;
-  justify-content: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .button {
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
   border-radius: 1.2em;
   width: 14em;
   height: 3em;
   border: 0.3em solid whitesmoke;
-  font-weight: bold;
+  transition: all 0.3s ease 0s;
 }
 
 .button-primary {
   background-color: whitesmoke;
+  font-weight: 700;
 }
 
 .button-secondary {
@@ -30,10 +22,21 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+  font-weight: 400;
+}
+
+.button-primary:hover {
+  color: whitesmoke;
+  background-color: transparent;
+}
+
+.button-secondary:hover {
+  background-color: whitesmoke;
+  color: #2f242c;
+  font-weight: 700;
 }
 
 .button-primary-text {
-  /* font-size: 16px; */
   font-size: 1rem;
   margin: 0;
   padding: 0;
@@ -43,38 +46,36 @@
   font-size: 0.75rem;
   white-space: pre-line;
   line-height: 1.5;
-  /* word-spacing: 1em; */
-  /* letter-spacing: -2px; */
-  /* overflow-wrap: break-word; */
   margin: 0;
   padding: 0;
 }
 
 @media only screen and (max-width: 480px) {
   .button-container {
-    height: 25%;
-    margin: 0;
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 18%;
+    margin-top: 50%;
+    margin-left: 20%;
   }
 
   .button {
     width: 35rem;
     height: 7em;
+    margin-top: 2em;
     margin-bottom: 2em;
     border: 0.7em solid whitesmoke;
     border-radius: 2.2em;
   }
 
   .button-primary-text {
-    font-size: 	2.3rem
+    font-size: 2.3rem;
   }
 
   .button-secondary-text {
-    font-size: 	1.7rem;
+    font-size: 1.7rem;
     margin: 1em;
   }
 }

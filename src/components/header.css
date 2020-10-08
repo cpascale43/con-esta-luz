@@ -1,7 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap");
+
 .header {
   display: flex;
   justify-content: space-between;
   margin: 0 5%;
+}
+
+.brand {
+  margin: 0;
+  font-family: "Mr Dafoe", cursive;
+  font-size: 300%;
 }
 
 .header div {
@@ -18,17 +26,22 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .header {
+    display: none;
+  }
+
   .header-icons {
     display: none;
   }
 
-  .header {
+  /* .header {
+    display: none;
     display: flex;
     justify-content: center;
     margin-top: 5%
-  }
+  } */
 
-  .header div h1 {
+  /* .header div h1 {
     font-size: 4em;
-  }
+  } */
 }

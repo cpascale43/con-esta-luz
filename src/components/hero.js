@@ -17,21 +17,24 @@ const CTA2 = {
 
 const Hero = () => (
   <div className="hero-container">
-    <h1 className="text text-normal">
-      HONDURAN <br className="visible-xs" />
-      CHILDREN <br className="visible-xs" />
-      NEEDED HELP.{" "}
-    </h1>
-    <h1 className="text text-bold">
-      SHE ANSWERED <br className="visible-xs" />
-      THE CALL.
-    </h1>
-    <div className="button-container">
-      <div>
-        <Button {...CTA1} />
-      </div>
-      <div>
-        <Button {...CTA2} />
+    <div style={{marginLeft: '8em'}} className="container">
+      <h1 className="row text text-normal pl-2">
+        HONDURAN <br className="visible-xs" />
+        CHILDREN <br className="visible-xs" />
+        NEEDED HELP.
+      </h1>
+      <h1 className="row text text-bold pl-2">
+        SHE ANSWERED <br /> THE CALL.
+      </h1>
+      <div className="button-container">
+        <div className="row d-flex flex-column">
+          <div className="col py-2">
+            <Button {...CTA1} />
+          </div>
+          <div className="col py-2">
+            <Button {...CTA2} />
+          </div>
+        </div>
       </div>
     </div>
   </div>

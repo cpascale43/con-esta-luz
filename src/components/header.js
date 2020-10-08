@@ -4,7 +4,9 @@ import React from "react"
 
 import spain from "../images/spain-flag-round-icon-128.png"
 import { SocialIcon, FlagIcon } from "./icons"
+import Hero from "./hero"
 import "./header.css"
+import "./heroImage.css"
 
 const twitter = {
   icon: ["fab", "twitter"],
@@ -28,27 +30,30 @@ const spainFlag = {
 }
 
 const Header = ({ siteTitle }) => (
-  <header className="header">
-    <div>
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-    <div className="header-icons">
-      <SocialIcon {...facebook} />
-      <SocialIcon {...twitter} />
-      <SocialIcon {...instagram} />
-      <FlagIcon {...spainFlag} />
-    </div>
-  </header>
+  <div>
+    <header className="header">
+      <div>
+        <h1 className="brand">
+          <Link
+            to="/"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            {siteTitle}
+          </Link>
+        </h1>
+      </div>
+      <div className="header-icons">
+        <SocialIcon {...facebook} />
+        <SocialIcon {...twitter} />
+        <SocialIcon {...instagram} />
+        <FlagIcon {...spainFlag} />
+      </div>
+    </header>
+    <Hero />
+  </div>
 )
 
 Header.propTypes = {
