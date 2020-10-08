@@ -27,7 +27,7 @@ const Hero = () => (
         SHE ANSWERED <br /> THE CALL.
       </h1>
       <div className="button-container">
-        <div className="row d-flex flex-column">
+        <div className="row d-flex flex-column justify-content-between">
           <div className="col py-2">
             <Button {...CTA1} />
           </div>
