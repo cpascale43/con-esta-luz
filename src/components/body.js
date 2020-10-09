@@ -64,12 +64,11 @@ const Body = () => (
         <br />
         Rosa focusing on education, healthcare, housing and entrepreneurship.
       </p>
-    </div>
-
-    <div className="row d-flex justify-content-center align-items-baseline margin-bottom">
-      {partnerLogos.map(logo => (
-        <PartnerIcon key={logo.id} {...logo} />
-      ))}
+      <div className="row d-flex justify-content-center align-items-baseline margin-bottom">
+        {partnerLogos.map(logo => (
+          <PartnerIcon key={logo.id} {...logo} />
+        ))}
+      </div>
     </div>
 
     <footer
