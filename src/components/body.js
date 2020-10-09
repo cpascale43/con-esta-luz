@@ -1,7 +1,5 @@
 import React from "react"
 
-import Triangle from "./triangle"
-
 import "./body.css"
 import "./triangle.css"
 
@@ -75,7 +73,7 @@ const Body = () => (
       className="row d-flex flex-column align-items-center"
       style={{ margin: "1.5em" }}
     >
-      <div className="col-1">
+      <div className="col-2">
         <img src={miraflores} style={{ margin: "0" }} />
       </div>
       <div className="col">
