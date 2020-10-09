@@ -11,23 +11,10 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 
-import { PartnerIcon } from "./icons"
-import fohcLogo from "../images/Partner Logos/FoHC_Logo.svg"
-import fundacionLogo from "../images/Partner Logos/Fundacion.png"
-import hcrfLogo from "../images/Partner Logos/hcrf-new-logo-feb-20220.png"
-import sanLogo from "../images/Partner Logos/InProduction-SAN-Logo.jpg"
-import virtuLogo from "../images/Partner Logos/Virtu.png"
+import miraflores from "../images/miraflorescolorlogo.png"
 
 import "./layout.css"
 import "./heroImage.css"
-
-const partnerLogos = [
-  { id: 0, src: hcrfLogo, alt: "" },
-  { id: 1, src: virtuLogo, alt: "" },
-  { id: 2, src: fohcLogo, alt: "" },
-  { id: 3, src: sanLogo, alt: "" },
-  { id: 4, src: fundacionLogo, alt: "" },
-]
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -43,7 +30,6 @@ const Layout = ({ children }) => {
   return (
     <div
       style={{
-        // maxWidth: "100vw",
         display: "flex",
         flexDirection: "column",
       }}
@@ -60,12 +46,9 @@ const Layout = ({ children }) => {
         {children}
       </main>
 
-      <footer style={{marginBottom: '1em'}}>
-        <div className="row d-flex justify-content-center align-items-baseline">
-          {partnerLogos.map(logo => (
-            <PartnerIcon key={logo.id} {...logo} />
-          ))}
-        </div>
+      <footer style={{ marginBottom: "1em" }}>
+        Produced by Miraflores Films LLC{" "}
+        <img src={miraflores} style={{ width: `5%`, margin: 0 }} />
       </footer>
     </div>
   )

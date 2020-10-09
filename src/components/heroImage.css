@@ -1,7 +1,8 @@
 .imageWrapper {
   background-size: cover;
-  background-image: url("../images/sormariarosa.jpeg");
-  height: 100vh;
+  background-position-y: -5em;
+  background-image: url("../images/sormariarosa.jpg");
+  height: 90vh;
 }
 
 @media only screen and (max-width: 480px) {

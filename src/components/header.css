@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
 
 .header {
   display: flex;
@@ -8,8 +8,8 @@
 
 .brand {
   margin: 0;
-  font-family: "Mr Dafoe", cursive;
-  font-size: 300%;
+  font-family: 'Sarina', cursive;
+  font-size: 40px;
 }
 
 .header div {
