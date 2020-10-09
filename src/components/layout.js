@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
       }}
     >
       <div className="imageWrapper">
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={data.site.siteMetadata.title} style={{position: 'relative'}} />
       </div>
 
       <main

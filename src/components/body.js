@@ -4,20 +4,8 @@ import "./body.css"
 import "./triangle.css"
 
 import { PartnerIcon } from "./icons"
-import fohcLogo from "../images/Partner Logos/FoHC_Logo.svg"
-import fundacionLogo from "../images/Partner Logos/Fundacion.png"
-import hcrfLogo from "../images/Partner Logos/hcrf-new-logo-feb-20220.png"
-import sanLogo from "../images/Partner Logos/InProduction-SAN-Logo.jpg"
-import virtuLogo from "../images/Partner Logos/Virtu.png"
+import { partnerLogos } from "../constants"
 import miraflores from "../images/miraflorescolorlogo.png"
-
-const partnerLogos = [
-  { id: 0, src: hcrfLogo, alt: "" },
-  { id: 1, src: virtuLogo, alt: "" },
-  { id: 2, src: fohcLogo, alt: "" },
-  { id: 3, src: sanLogo, alt: "" },
-  { id: 4, src: fundacionLogo, alt: "" },
-]
 
 const Body = () => (
   <div className="container">
@@ -62,18 +50,24 @@ const Body = () => (
         <br />
         Rosa focusing on education, healthcare, housing and entrepreneurship.
       </p>
-      <div className="row d-flex justify-content-center align-items-baseline margin-bottom">
+      <div className="row d-flex justify-content-center align-items-baseline">
         {partnerLogos.map(logo => (
           <PartnerIcon key={logo.id} {...logo} />
         ))}
       </div>
     </div>
 
+    <div className="row d-flex justify-content-center">
+      <p className="body-text-regular bold text-center" style={{ margin: 0 }}>
+        info@withthislight.com
+      </p>
+    </div>
+
     <footer
       className="row d-flex flex-column align-items-center"
-      style={{ margin: "1.5em" }}
+      style={{ margin: "2em" }}
     >
-      <div className="col-2">
+      <div className="col-2" style={{ margin: "1em" }}>
         <img src={miraflores} style={{ margin: "0" }} />
       </div>
       <div className="col">

@@ -1,36 +1,15 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { Fragment } from "react"
 
-import spain from "../images/spain-flag-round-icon-128.png"
 import { SocialIcon, FlagIcon } from "./icons"
+import { socialIcons, spainFlag } from "../constants/index"
 import Hero from "./hero"
 import "./header.css"
 import "./heroImage.css"
 
-const twitter = {
-  icon: ["fab", "twitter"],
-  url: "https://twitter.com/carriepascale",
-}
-
-const facebook = {
-  icon: ["fab", "facebook-f"],
-  url: "https://www.facebook.com/",
-}
-
-const instagram = {
-  icon: ["fab", "instagram"],
-  url: "https://www.instagram.com/",
-}
-
-const spainFlag = {
-  src: spain,
-  onClick: () => console.log("clicked"),
-  alt: "The Spanish flag",
-}
-
 const Header = ({ siteTitle }) => (
-  <div>
+  <Fragment>
     <header className="header">
       <div>
         <h1 className="brand">
@@ -46,14 +25,14 @@ const Header = ({ siteTitle }) => (
         </h1>
       </div>
       <div className="header-icons">
-        <SocialIcon {...facebook} />
-        <SocialIcon {...twitter} />
-        <SocialIcon {...instagram} />
+        {socialIcons.map(icon => (
+          <SocialIcon key={icon.id} {...icon} />
+        ))}
         <FlagIcon {...spainFlag} />
       </div>
     </header>
     <Hero />
-  </div>
+  </Fragment>
 )
 
 Header.propTypes = {

@@ -2,8 +2,13 @@ import React from "react"
 
 // import "./button.css"
 
-export const Button = ({ onClick, text, type="button-primary" }) => (
-  <button className={`button ${type}`} onClick={onClick}>
-    <p className={`${type}-text`}>{text}</p>
-  </button>
+export const Button = ({ link, text, type = "button-primary" }) => (
+  <a
+    className={`button ${type} d-flex align-items-center justify-content-center`}
+    href={link}
+  >
+    <p>{text}</p>
+  </a>
 )
+
+// {`button ${type}`}

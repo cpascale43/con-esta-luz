@@ -30,7 +30,7 @@ export const FlagIcon = ({ src, alt, onClick }) => (
 
 export const PartnerIcon = ({ id, src, alt }) => {
   return (
-    <div style={{ width: 150, height: 150, marginRight: id === 3 ? "0" : "1.2em" }}>
+    <div style={{ width: 150, height: 150, marginRight: id === 4 ? "0" : "1.5em" }}>
       <img style={{ margin: 0 }} src={src} alt={alt} />
     </div>
   )
