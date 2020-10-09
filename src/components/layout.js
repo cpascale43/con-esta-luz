@@ -10,7 +10,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import Triangle from "./triangle"
 
 import "./layout.css"
 import "./heroImage.css"
@@ -34,7 +33,10 @@ const Layout = ({ children }) => {
       }}
     >
       <div className="imageWrapper">
-        <Header siteTitle={data.site.siteMetadata.title} style={{position: 'relative'}} />
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          style={{ position: "relative" }}
+        />
       </div>
 
       <main
@@ -44,7 +46,6 @@ const Layout = ({ children }) => {
       >
         {children}
       </main>
-
     </div>
   )
 }
