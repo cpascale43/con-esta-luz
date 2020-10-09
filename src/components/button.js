@@ -1,7 +1,5 @@
 import React from "react"
 
-// import "./button.css"
-
 export const Button = ({ link, text, type = "button-primary" }) => (
   <a
     className={`button ${type} d-flex align-items-center justify-content-center`}
@@ -10,5 +8,3 @@ export const Button = ({ link, text, type = "button-primary" }) => (
     <p>{text}</p>
   </a>
 )
-
-// {`button ${type}`}

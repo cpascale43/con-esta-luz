@@ -1,7 +1,7 @@
 export const heroText = {
-  eng: {
-    primary: "HONDURAN CHILDREN NEEDED HELP.",
-    secondary: "SHE ANSWERED THE CALL.",
+  EN: {
+    primary: `HONDURAN CHILDREN NEEDED HELP.`,
+    secondary: `SHE ANSWERED THE CALL.`,
     button: {
       cta1: {
         text: "STAY IN THE LOOP",
@@ -14,9 +14,9 @@ export const heroText = {
       },
     },
   },
-  spa: {
-    primary: "",
-    secondary: "",
+  ES: {
+    primary: "Los niños hondureños necesitaban ayuda.",
+    secondary: "Ella respondió la llamada.",
     button: {
       cta1: "",
       cta2: "",

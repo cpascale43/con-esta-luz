@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/vmg2ave.css");
 /* 
  * Purpose:
  * Assign height: "100%" to
@@ -25,4 +26,16 @@ div[role="group"][tabindex] {
 
 .visible-xs {
   display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .visible-lg {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1044px) {
+  .visible-lg {
+    display: block;
+  }
 }

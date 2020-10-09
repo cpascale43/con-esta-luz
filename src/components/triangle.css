@@ -1,14 +1,23 @@
 .triangle-wrapper {
-  /* position: relative; */
-  height: 100vh;
-  width: 100vw;
+  position: relative;
 }
 
 .triangle {
-  /* width: 100%;
+  width: 100%;
   height: 100%;
   position: absolute;
   z-index: -1;
-  background: green;
-  clip-path: polygon(0 0, 0 100%, 100% 50%); */
+  background: #8cc7f1;
+  clip-path: polygon(0 14.5%, 0 71%, 100% 46%);
+}
+
+@media only screen and (max-width: 480px) {
+  .triangle {
+    width: 105%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background: #8cc7f1;
+    clip-path: polygon(0 20%, 0 50%, 100% 35%);
+  }
 }

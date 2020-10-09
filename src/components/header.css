@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sarina&display=swap");
 
 .header {
   display: flex;
@@ -8,7 +8,7 @@
 
 .brand {
   margin: 0;
-  font-family: 'Sarina', cursive;
+  font-family: "Sarina", cursive;
   font-size: 1.8em;
 }
 
@@ -26,22 +26,20 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .header {
-    display: none;
-  }
-
   .header-icons {
     display: none;
   }
 
-  /* .header {
+  .header {
     display: none;
     display: flex;
     justify-content: center;
-    margin-top: 5%
-  } */
+    margin: 0;
+    margin-top: 1.5em;
+  }
 
-  /* .header div h1 {
-    font-size: 4em;
-  } */
+  .brand {
+    margin-top: 1em;
+    font-size: 3.5em;
+  }
 }

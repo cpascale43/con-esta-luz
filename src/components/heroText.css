@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
-@import url("https://use.typekit.net/vmg2ave.css");
-
 .hero-container {
   height: 115vh;
   display: flex;
@@ -30,18 +27,9 @@
 
 @media only screen and (max-width: 480px) {
   .hero-container {
-    max-width: 90%;
-    position: absolute;
-    left: 56%;
-    margin: 0;
-    margin-top: 15em;
-    display: block;
-  }
-
-  .hero-container h1 {
-    white-space: normal;
-    font-size: 4.8em;
-    /* text-indent: 5px; */
+    max-width: 100vw;
+    max-height: 100vh;
+    margin-top: 15%;
   }
 
   .visible-xs {
@@ -49,13 +37,8 @@
   }
 
   .text {
-    text-align: left;
-    letter-spacing: 1px;
-  }
-
-  @media only screen and (max-width: 700) {
-    .hero-container h1 {
-      border: 1px solid teal;
-    }
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 400%;
   }
 }

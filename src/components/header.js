@@ -11,7 +11,7 @@ import "./heroImage.css"
 const Header = ({ siteTitle }) => (
   <Fragment>
     <header className="header">
-      <div>
+      <div className="brand-container">
         <h1 className="brand">
           <Link
             to="/"
