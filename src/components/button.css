@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+.button-container {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .button {
   font-family: "Roboto", sans-serif;
   cursor: pointer;

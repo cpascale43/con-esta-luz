@@ -17,12 +17,12 @@ const CTA2 = {
 
 const Hero = () => (
   <div className="hero-container">
-    <div className="container d-flex flex-column align-items-center">
+    {/* <div className="container d-flex flex-column align-items-center"> */}
       <h1 className="row text text-normal pl-2">
         HONDURAN CHILDREN NEEDED HELP.
       </h1>
       <h1 className="row text text-bold pl-2">SHE ANSWERED THE CALL.</h1>
-      <div className="button-container justify-content-between">
+      <div className="button-container justify-content-between"> 
         <div className="row d-flex">
           <div className="col">
             <Button {...CTA1} />
@@ -32,7 +32,7 @@ const Hero = () => (
           </div>
         </div>
       </div>
-    </div>
+    {/* </div> */}
   </div>
 )
 

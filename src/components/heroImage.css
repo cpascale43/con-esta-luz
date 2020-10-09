@@ -1,6 +1,7 @@
 .imageWrapper {
   background-size: cover;
-  background-position-y: -5em;
+  background-position: center;
+  /* background-position-y: -5em; */
   background-image: url("../images/sormariarosa.jpg");
   height: 90vh;
 }

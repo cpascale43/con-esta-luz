@@ -10,8 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-
-import miraflores from "../images/miraflorescolorlogo.png"
+import Triangle from "./triangle"
 
 import "./layout.css"
 import "./heroImage.css"
@@ -46,10 +45,6 @@ const Layout = ({ children }) => {
         {children}
       </main>
 
-      <footer style={{ marginBottom: "1em" }}>
-        Produced by Miraflores Films LLC{" "}
-        <img src={miraflores} style={{ width: `5%`, margin: 0 }} />
-      </footer>
     </div>
   )
 }

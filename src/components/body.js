@@ -1,6 +1,9 @@
 import React from "react"
 
+import Triangle from "./triangle"
+
 import "./body.css"
+import "./triangle.css"
 
 import { PartnerIcon } from "./icons"
 import fohcLogo from "../images/Partner Logos/FoHC_Logo.svg"
@@ -8,6 +11,7 @@ import fundacionLogo from "../images/Partner Logos/Fundacion.png"
 import hcrfLogo from "../images/Partner Logos/hcrf-new-logo-feb-20220.png"
 import sanLogo from "../images/Partner Logos/InProduction-SAN-Logo.jpg"
 import virtuLogo from "../images/Partner Logos/Virtu.png"
+import miraflores from "../images/miraflorescolorlogo.png"
 
 const partnerLogos = [
   { id: 0, src: hcrfLogo, alt: "" },
@@ -18,7 +22,6 @@ const partnerLogos = [
 ]
 
 const Body = () => (
-  // <div className="triangle">
   <div className="container">
     <div className="row body-container-left">
       <h2 className="secondary-heading-text">
@@ -43,10 +46,11 @@ const Body = () => (
 
     <div className="row d-flex justify-content-end align-items-center body-container-center">
       <p className="center-text quote-text bold">
-        I will always need a lighthouse, a beacon of light, <br />because with that
-        light I can get through to people to <br />understand them, so I can help
-        them, so they can have relief. <br />My life is, how to relieve others? How
-        can I make <br />them feel, even a little bit, that God loves them.
+        I will always need a lighthouse, a beacon of light, <br />
+        because with that light I can get through to people to <br />
+        understand them, so I can help them, so they can have relief. <br />
+        My life is, how to relieve others? How can I make <br />
+        them feel, even a little bit, that God loves them.
       </p>
       <p className="body-text-regular">SOR MARIA ROSA LEGGOL</p>
     </div>
@@ -54,18 +58,34 @@ const Body = () => (
     <div className="row body-container-bottom">
       <h2 className="partner-text center-text margin-bottom">PARTNERS</h2>
       <p className="body-text-regular center-text">
-        Several organizations in the USA and Canada were established to support<br />
-        the ongoing work of the charitable organizations founded by Sor Maria <br/>
+        Several organizations in the USA and Canada were established to support
+        <br />
+        the ongoing work of the charitable organizations founded by Sor Maria{" "}
+        <br />
         Rosa focusing on education, healthcare, housing and entrepreneurship.
       </p>
     </div>
-    <div className="row d-flex justify-content-center align-items-baseline">
+
+    <div className="row d-flex justify-content-center align-items-baseline margin-bottom">
       {partnerLogos.map(logo => (
         <PartnerIcon key={logo.id} {...logo} />
       ))}
     </div>
+
+    <footer
+      className="row d-flex flex-column align-items-center"
+      style={{ margin: "1.5em" }}
+    >
+      <div className="col-1">
+        <img src={miraflores} style={{ margin: "0" }} />
+      </div>
+      <div className="col">
+        <p className="body-text-small bold text-center" style={{ margin: "0" }}>
+          Produced by Miraflores Films LLC
+        </p>
+      </div>
+    </footer>
   </div>
-  // </div>
 )
 
 export default Body
