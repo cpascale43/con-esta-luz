@@ -8,7 +8,12 @@ import "./icons.css"
 library.add(fab)
 
 export const SocialIcon = ({ url, icon }) => (
-  <a href={url} className="link-container icon social">
+  <a
+    href={url}
+    className="link-container icon social"
+    target="_blank"
+    rel="noreferrer"
+  >
     <FontAwesomeIcon style={{ margin: 0 }} icon={icon} size="2x" />
   </a>
 )
@@ -26,7 +31,7 @@ export const FlagIcon = ({ onClick, src, alt }) => (
 
 export const PartnerIcon = ({ id, link, src, alt }) => {
   return (
-    <a href={link}>
+    <a href={link} target="_blank" rel="noreferrer">
       <img
         src={src}
         style={{ marginRight: id === 4 ? "0" : "1em" }}

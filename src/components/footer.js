@@ -11,7 +11,7 @@ const Footer = () => (
     <footer id="footer-container" className="container p-3">
       <div className="row ft-row">
         <div className="ft-social-column col-3 miraflores-logo">
-          <a href={"https://mirafloresfilms.com/"}>
+          <a href={"https://mirafloresfilms.com/"} target="_blank" rel="noreferrer">
             <img
               className="miraflores-logo"
               src={miraflores}

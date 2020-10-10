@@ -7,7 +7,6 @@ import "./triangle.css"
 import { PartnerIcon } from "./icons"
 import { partnerLogos } from "../constants"
 import Video from "./video"
-import { Footer } from "./footer"
 
 const Body = props => {
   return (
