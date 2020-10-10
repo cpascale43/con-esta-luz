@@ -1,0 +1,36 @@
+.miraflores-logo {
+  padding-left: 1em;
+}
+
+.ft-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.ft-text {
+  font-family: multi-text, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: small;
+  padding: 0.5em 0.5em 1em 1em;
+}
+
+@media (min-width: 1281px) {
+  #footer-container {
+    padding: 0;
+  }
+
+  .ft-social-column {
+    justify-content: flex-start;
+  }
+
+  .miraflores-logo {
+    width: 6em;
+  }
+
+  .ft-text {
+    font-size: large;
+  }
+}

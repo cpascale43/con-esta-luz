@@ -1,6 +1,13 @@
+.link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
 .icon {
-  width: 2em;
-  height: 2em;
+  width: 3.5em;
+  height: 3.5em;
   text-align: center;
   text-decoration: none;
   margin: 0 0.5em;
@@ -21,23 +28,14 @@
 }
 
 .flag {
-  width: 2em;
-  height: 2em;
+  width: 3.5em;
+  height: 3.5em;
   margin: 0 0.5em;
   padding: 0;
   border: none;
   background: transparent;
 }
 
-.no-hover {
+/* .no-hover {
   pointer-events: none;
-}
-
-@media only screen and (max-width: 480px) {
-  .mobile-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
+} */

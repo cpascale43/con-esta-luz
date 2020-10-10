@@ -6,9 +6,8 @@ import "./triangle.css"
 
 import { PartnerIcon } from "./icons"
 import { partnerLogos } from "../constants"
-import miraflores from "../images/miraflorescolorlogo.png"
 import Video from "./video"
-import { Popup } from "./popup"
+import { Footer } from "./footer"
 
 const Body = props => {
   return (
@@ -92,7 +91,11 @@ const Body = props => {
         </div>
 
         <div className="row body-container-bottom">
-          <h2 className="partner-text center-text margin-bottom">PARTNERS</h2>
+          {props.spanishEnabled ? (
+            <h2 className="partner-text center-text margin-bottom">SOCIOS</h2>
+          ) : (
+            <h2 className="partner-text center-text margin-bottom">PARTNERS</h2>
+          )}
           {props.spanishEnabled ? (
             <p className="mobile-left body-text-regular center-text">
               Se establecieron varias organizaciones
@@ -124,35 +127,6 @@ const Body = props => {
             ))}
           </div>
         </div>
-
-        <div className="row d-flex justify-content-center">
-          <p className="margin-top-lg body-text-regular bold text-center">
-            info@withthislight.com
-          </p>
-        </div>
-        <footer
-          className="row d-flex flex-column align-items-center"
-          style={{ margin: "2em" }}
-        >
-          <div className="col-3" style={{ margin: "1em" }}>
-            <a href={"https://mirafloresfilms.com/"}>
-              <img
-                className="miraflores-logo"
-                src={miraflores}
-                style={{ margin: "0" }}
-                alt="A green and teal logo representing Miraflores films."
-              />
-            </a>
-          </div>
-          <div className="col">
-            <p
-              className="body-text-small bold text-center"
-              style={{ margin: "0" }}
-            >
-              Produced by Miraflores Films LLC
-            </p>
-          </div>
-        </footer>
       </div>
     </div>
   )

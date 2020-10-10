@@ -8,12 +8,8 @@ import "./icons.css"
 library.add(fab)
 
 export const SocialIcon = ({ url, icon }) => (
-  <a
-    href={url}
-    className="icon social"
-    style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
-  >
-    <FontAwesomeIcon icon={icon} size="1x" />
+  <a href={url} className="link-container icon social">
+    <FontAwesomeIcon style={{ margin: 0 }} icon={icon} size="2x" />
   </a>
 )
 
@@ -24,7 +20,7 @@ export const FlagIcon = ({ onClick, src, alt }) => (
     onClick={onClick}
     style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
   >
-    <img style={{ margin: "0", width: "28px" }} src={src} alt={alt} />
+    <img style={{ margin: 0 }} src={src} alt={alt} />
   </button>
 )
 
