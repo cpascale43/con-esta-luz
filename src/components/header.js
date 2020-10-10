@@ -33,7 +33,7 @@ const Header = props => {
             <SocialIcon key={icon.id} {...icon} />
           ))}
 
-          <FlagIcon src={imageSrc} />
+          <FlagIcon onClick={() => props.toggleLanguage()} src={imageSrc} />
 
           <div style={{ width: "25%", display: "flex", alignItems: "center" }}>
             <button
