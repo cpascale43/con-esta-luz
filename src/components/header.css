@@ -49,6 +49,10 @@
     margin: 1em 2em;
   }
 
+  .brand {
+    white-space: nowrap;
+  }
+
   .brand-container {
     width: 100%;
     margin: 0;
