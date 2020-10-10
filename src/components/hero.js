@@ -13,7 +13,7 @@ const Hero = props => {
     button: {
       cta1: {
         text: "STAY IN THE LOOP",
-        link: "",
+        link: "https://twitter.com/withthislight",
       },
       cta2: {
         text: "LEARN ABOUT SOCIEDAD AMIGOS DE\nLOS NIÑOS (SAN)",

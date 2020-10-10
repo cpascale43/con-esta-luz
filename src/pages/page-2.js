@@ -3,12 +3,12 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import {Popup} from "../components/popup"
+// import {Popup} from "../components/popup"
 
 const SecondPage = () => (
   <Fragment>
     <SEO title="Page two" />
-    <Popup />
+    {/* <Popup /> */}
     <Link to="/">Go back to the homepage</Link>
   </Fragment>
 )
