@@ -17,6 +17,10 @@
   padding: 0.5em 0.5em 1em 1em;
 }
 
+.ft-social-column {
+  padding-top: 0.5em;
+}
+
 @media (min-width: 1281px) {
   #footer-container {
     padding: 0;

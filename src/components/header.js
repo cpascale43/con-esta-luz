@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { Fragment } from "react"
 import { connect } from "react-redux"
@@ -23,15 +22,7 @@ const Header = props => {
       <header className="header">
         <div className="brand-container">
           <h1 className="brand">
-            {/* <Link
-              to="/"
-              style={{
-                color: `white`,
-                textDecoration: `none`,
-              }}
-            > */}
-              {spanishEnabled ? "Con Esta Luz" : "With This Light"}
-            {/* </Link> */}
+            {spanishEnabled ? "Con Esta Luz" : "With This Light"}
           </h1>
           <div className="visible-xs">
             <FlagIcon onClick={() => props.toggleLanguage()} src={imageSrc} />

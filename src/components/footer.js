@@ -23,7 +23,7 @@ const Footer = () => (
 
         <div className="ft-social-column col d-flex justify-content-end">
           {socialIcons.map(icon => (
-            <div key={icon.id} style={{ margin: 0, padding: 0 }}>
+            <div key={icon.id}>
               <SocialIcon {...icon} />
             </div>
           ))}
