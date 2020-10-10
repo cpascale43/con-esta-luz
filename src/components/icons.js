@@ -20,7 +20,7 @@ export const SocialIcon = ({ url, icon }) => (
 export const FlagIcon = ({ onClick, src, alt }) => (
   <button
     type="button"
-    className="flag"
+    className="flag no-hover"
     onClick={onClick}
     style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
   >
@@ -28,15 +28,14 @@ export const FlagIcon = ({ onClick, src, alt }) => (
   </button>
 )
 
-export const PartnerIcon = ({ id, src, alt }) => {
+export const PartnerIcon = ({ id, link, src, alt }) => {
   return (
-    <img
-      src={src}
-      style={{ marginRight: id === 4 ? "0" : "1em" }}
-      alt={alt}
-    />
+    <a href={link}>
+      <img
+        src={src}
+        style={{ marginRight: id === 4 ? "0" : "1em" }}
+        alt={alt}
+      />
+    </a>
   )
 }
-
-// d-flex justify-content-center align-items-baseline
-//

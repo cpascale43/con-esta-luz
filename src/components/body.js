@@ -8,6 +8,7 @@ import { PartnerIcon } from "./icons"
 import { partnerLogos } from "../constants"
 import miraflores from "../images/miraflorescolorlogo.png"
 import Video from "./video"
+import { Popup } from "./popup"
 
 const Body = props => {
   return (
@@ -134,12 +135,14 @@ const Body = props => {
           style={{ margin: "2em" }}
         >
           <div className="col-3" style={{ margin: "1em" }}>
-            <img
-              className="miraflores-logo"
-              src={miraflores}
-              style={{ margin: "0" }}
-              alt="A green and teal logo representing Miraflores films."
-            />
+            <a href={"https://mirafloresfilms.com/"}>
+              <img
+                className="miraflores-logo"
+                src={miraflores}
+                style={{ margin: "0" }}
+                alt="A green and teal logo representing Miraflores films."
+              />
+            </a>
           </div>
           <div className="col">
             <p

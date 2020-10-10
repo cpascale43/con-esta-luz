@@ -23,15 +23,15 @@ const Header = props => {
       <header className="header">
         <div className="brand-container">
           <h1 className="brand">
-            <Link
+            {/* <Link
               to="/"
               style={{
                 color: `white`,
                 textDecoration: `none`,
               }}
-            >
+            > */}
               {spanishEnabled ? "Con Esta Luz" : "With This Light"}
-            </Link>
+            {/* </Link> */}
           </h1>
           <div className="visible-xs">
             <FlagIcon onClick={() => props.toggleLanguage()} src={imageSrc} />
@@ -51,7 +51,6 @@ const Header = props => {
               style={{
                 color: "whitesmoke",
                 textDecoration: "underline",
-                marginLeft: "1em",
               }}
             >
               {spanishEnabled ? "English" : `Español`}

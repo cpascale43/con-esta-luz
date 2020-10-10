@@ -29,8 +29,8 @@
   background: transparent;
 }
 
-.flag:hover {
-  cursor: pointer;
+.no-hover {
+  pointer-events: none;
 }
 
 @media only screen and (max-width: 480px) {
