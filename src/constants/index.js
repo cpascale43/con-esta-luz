@@ -18,8 +18,8 @@ export const heroText = {
     primary: "Los niños hondureños necesitaban ayuda.",
     secondary: "Ella respondió la llamada.",
     button: {
-      cta1: "",
-      cta2: "",
+      cta1: "Estés al tanto",
+      cta2: "Conoce Sociedad Amigos de los Niños (SAN)",
     },
   },
 }
@@ -44,12 +44,6 @@ export const socialIcons = [
     url: "https://www.instagram.com/withthislight/",
   },
 ]
-
-export const spainFlag = {
-  src: require("../images/spain-flag-round-icon-128.png"),
-  onClick: () => console.log("clicked"),
-  alt: "The Spanish flag",
-}
 
 export const partnerLogos = [
   {

@@ -3,6 +3,7 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   margin: 0 5%;
 }
 
@@ -15,14 +16,26 @@
 .header div {
   max-height: 10%;
   margin: 0;
-  padding: 1.45rem 1.0875rem;
+  padding: 1.45rem 0;
 }
 
 .header-icons {
-  width: 25%;
+  padding: 0;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+.language-toggle {
+  cursor: pointer;
+  background: none;
+  border: none;
+  /* white-space: nowrap; */
+}
+
+.language-toggle:hover {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 480px) {

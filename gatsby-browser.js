@@ -5,7 +5,13 @@
  */
 
 // You can delete this file if you're not using it
-//bootstrap 
+// bootstrap 
 import 'bootstrap/dist/css/bootstrap.css';
 
+// semantic-ui 
+import 'semantic-ui-css/semantic.min.css'
+
 import "./src/styles/global.css"
+
+import wrapWithProvider from "./wrap-with-provider"
+export const wrapRootElement = wrapWithProvider
