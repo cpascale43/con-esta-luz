@@ -13,7 +13,7 @@ const Hero = props => {
     button: {
       cta1: {
         text: "STAY IN THE LOOP",
-        link: "https://twitter.com/withthislight",
+        link: "https://view.flodesk.com/pages/5f81f4b37e26d151dc10d322",
       },
       cta2: {
         text: "LEARN ABOUT SOCIEDAD AMIGOS DE\nLOS NIÑOS (SAN)",
