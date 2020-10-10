@@ -64,13 +64,13 @@
 
   .button {
     width: 35rem;
-    height: 5em;
-    margin: 1em;
+    height: 4em;
+    margin: 0.5em;
     border: 0.7em solid whitesmoke;
     border-radius: 2.2em;
   }
 
   .button p {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
