@@ -21,20 +21,22 @@ export const FlagIcon = ({ onClick, src, alt }) => (
   <button
     type="button"
     className="flag"
-    onClick={() => onClick}
+    onClick={onClick}
     style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
   >
-    <img style={{ margin: "0", width: '28px' }} src={src} alt={alt} />
+    <img style={{ margin: "0", width: "28px" }} src={src} alt={alt} />
   </button>
 )
 
 export const PartnerIcon = ({ id, src, alt }) => {
   return (
-    <div
-      className="mobile-center"
-      style={{ width: 150, height: 150, marginRight: id === 4 ? "0" : "1.5em" }}
-    >
-      <img style={{ margin: 0 }} src={src} alt={alt} />
-    </div>
+    <img
+      src={src}
+      style={{ marginRight: id === 4 ? "0" : "1em" }}
+      alt={alt}
+    />
   )
 }
+
+// d-flex justify-content-center align-items-baseline
+//

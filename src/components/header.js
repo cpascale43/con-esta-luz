@@ -15,7 +15,7 @@ const usFlag = require("../images/US-flag-round-icon-128.png")
 const spainFlag = require("../images/spain-flag-round-icon-128.png")
 
 const Header = props => {
-  const {spanishEnabled} = props
+  const { spanishEnabled } = props
   const imageSrc = spanishEnabled ? usFlag : spainFlag
 
   return (
@@ -30,9 +30,12 @@ const Header = props => {
                 textDecoration: `none`,
               }}
             >
-              {spanishEnabled ? 'Con Esta Luz' : "With This Light"}
+              {spanishEnabled ? "Con Esta Luz" : "With This Light"}
             </Link>
           </h1>
+          <div className="visible-xs">
+            <FlagIcon onClick={() => props.toggleLanguage()} src={imageSrc} />
+          </div>
         </div>
         <div className="header-icons">
           {socialIcons.map(icon => (

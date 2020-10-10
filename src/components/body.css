@@ -62,51 +62,67 @@
   margin-bottom: 1.5em;
 }
 
-.video-container {
-  width: 600px;
-  height: 300px;
-  background-color: black;
+.logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos-container img {
+  width: 150px;
 }
 
 @media only screen and (max-width: 480px) {
-  .mobile-container {
+  .body-container-left {
+    margin: 2em;
+    height: 100vh;
+  }
+
+  .body-container-center {
+    margin: 2em;
+  }
+
+  .body-container-bottom {
+    margin: 2em;
+    margin-top: 6em;
     display: flex;
     flex-direction: column;
-    margin: 4em;
-    margin-bottom: 25%;
+    justify-content: flex-end;
+  }
+
+  .video-container {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+
+  .logos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3em;
   }
 
   .secondary-heading-text {
-    font-size: 250%;
+    font-size: 150%;
   }
 
   .body-text-regular {
-    font-size: 250%;
-    margin-bottom: 15%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-size: 125%;
   }
 
-  .quote-text {
-    font-size: 375%;
-    margin-bottom: 25%;
+  .body-text-small {
+    font-size: 100%;
   }
 
   .mobile-left {
     text-align: left;
   }
 
-  .no-bottom-margin {
-    margin-bottom: 0;
-  }
 
-  .partner-text {
-    font-size: 375%;
-  }
-
-  .margin-top-lg {
-    margin-top: 25%;
-  }
-  
-  .body-text-small {
-    font-size: 200%;
-  }
 }
