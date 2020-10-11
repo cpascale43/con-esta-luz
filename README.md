@@ -1,5 +1,5 @@
-A splash site honoring the life and legacy of Sor Maria Rosa Leggol, the "Mother Teresa" of Honduras.
+A mobile-first site for social impact campaigns.
 
-Built using: GatsbyJS, CSS Modules
+Built using GatsbyJS, Redux, Bootstrap CSS, CSS Modules.
 
 Deployed using Netlify.
