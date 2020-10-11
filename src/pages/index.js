@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 
-import { popupScript } from "./script";
+import { popupScript } from "../../script";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Body from "../components/body"
