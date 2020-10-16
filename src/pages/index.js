@@ -12,7 +12,7 @@ import "../components/heroImage.css"
 const IndexPage = () => (
   <Layout>
     <Helmet>
-      <script src={withPrefix("script.js")} type="text/javascript" />
+      <script src={withPrefix("in-memoriam.js")} type="text/javascript" />
     </Helmet>
     <SEO title="Home" />
     <Body />

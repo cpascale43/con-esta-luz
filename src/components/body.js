@@ -55,7 +55,11 @@ const Body = props => {
 
         <div className="video-container">
           <Video
-            videoSrcURL="https://www.youtube.com/embed/5VLk2D8e1C4"
+            // plays this one on loop
+            // videoSrcURL={`https://www.youtube.com/embed/5VLk2D8e1C4?playlist=5VLk2D8e1C4&loop=1`}
+
+            // this one might play 
+            videoSrcURL={`https://www.youtube.com/embed/5VLk2D8e1C4?autoplay=0&rel=0`}
             videoTitle="With This Light Teaser"
           />
         </div>
